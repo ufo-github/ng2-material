@@ -1,0 +1,33 @@
+/**
+ * Mixin that creates a new stacking context.
+ * see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+ */
+:host .example-readme pre {
+  padding: 12px;
+  border: 1px solid lightgray;
+  background-color: white; }
+
+:host .examples-intro:not(:first-child) {
+  margin-top: 2em; }
+
+:host .examples-intro h1 {
+  margin-top: 3em;
+  color: #009688; }
+
+:host .examples-intro h2 {
+  margin-top: 2em;
+  margin-bottom: 1.5em; }
+  :host .examples-intro h2 > code {
+    color: #009688; }
+
+:host .examples-intro table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8em; }
+  :host .examples-intro table th, :host .examples-intro table td {
+    padding: 4px 12px;
+    border: 1px solid #ddd; }
+  :host .examples-intro table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc; }

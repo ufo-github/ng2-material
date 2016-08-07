@@ -1,0 +1,138 @@
+/**
+ * Mixin that creates a new stacking context.
+ * see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+ */
+.highlight-block {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  background-color: #004d40;
+  color: white;
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  line-height: 1.45;
+  tab-size: 2;
+  -webkit-font-smoothing: auto;
+  -webkit-text-size-adjust: none;
+  position: relative;
+  margin: 0 0 1em;
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 100%; }
+
+.higlight-pre {
+  /*******************
+   * CODE HIGHLIGHTING
+   *******************/
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0; }
+  .higlight-pre > code {
+    margin: 0;
+    padding: 0;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    overflow-wrap: break-word;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.065); }
+    .higlight-pre > code.highlight {
+      font-size: 1em;
+      padding: 16px;
+      font-weight: 400;
+      -webkit-user-select: initial;
+      -moz-user-select: initial;
+      -ms-user-select: initial;
+      user-select: initial;
+      background-color: transparent;
+      display: block;
+      overflow-wrap: break-word; }
+    .higlight-pre > code:not(.highlight) {
+      margin-left: 1px;
+      margin-right: 1px;
+      -webkit-font-smoothing: auto;
+      padding: 0.125em 0.35em;
+      border-radius: 2px; }
+
+:host .hljs-tag,
+:host .hljs-tag .hljs-title,
+:host .hljs-keyword,
+:host .hljs-literal,
+:host .hljs-strong,
+:host .hljs-change,
+:host .hljs-winutils,
+:host .hljs-flow,
+:host .nginx .hljs-title,
+:host .tex .hljs-special {
+  color: #E5C3A2; }
+
+:host .hljs-constant,
+:host .asciidoc .hljs-code,
+:host .markdown .hljs-code {
+  color: #80CBC4; }
+
+:host .hljs-code,
+:host .hljs-class .hljs-title,
+:host .hljs-header {
+  color: white; }
+
+:host .hljs-link_label,
+:host .hljs-attribute,
+:host .hljs-symbol,
+:host .hljs-symbol .hljs-string,
+:host .hljs-value,
+:host .hljs-params,
+:host .hljs-regexp {
+  color: #7DB9F4; }
+
+:host .hljs-link_url,
+:host .hljs-tag .hljs-value,
+:host .hljs-string,
+:host .hljs-bullet,
+:host .hljs-subst,
+:host .hljs-title,
+:host .hljs-emphasis,
+:host .hljs-type,
+:host .hljs-preprocessor,
+:host .hljs-pragma,
+:host .ruby .hljs-class .hljs-parent,
+:host .hljs-built_in,
+:host .django .hljs-template_tag,
+:host .django .hljs-variable,
+:host .smalltalk .hljs-class,
+:host .hljs-javadoc,
+:host .django .hljs-filter .hljs-argument,
+:host .smalltalk .hljs-localvars,
+:host .smalltalk .hljs-array,
+:host .hljs-attr_selector,
+:host .hljs-pseudo,
+:host .hljs-addition,
+:host .hljs-stream,
+:host .hljs-envvar,
+:host .apache .hljs-tag,
+:host .apache .hljs-cbracket,
+:host .tex .hljs-command,
+:host .hljs-prompt,
+:host .hljs-name {
+  color: #9ccc65; }
+
+:host .hljs-comment,
+:host .hljs-annotation,
+:host .smartquote,
+:host .hljs-blockquote,
+:host .hljs-horizontal_rule,
+:host .hljs-decorator,
+:host .hljs-pi,
+:host .hljs-doctype,
+:host .hljs-deletion,
+:host .hljs-shebang,
+:host .apache .hljs-sqbracket,
+:host .tex .hljs-formula {
+  color: #607D8B; }
+
+:host .coffeescript .javascript,
+:host .javascript .xml,
+:host .tex .hljs-formula,
+:host .xml .javascript,
+:host .xml .vbscript,
+:host .xml .css,
+:host .xml .hljs-cdata {
+  opacity: 0.5; }

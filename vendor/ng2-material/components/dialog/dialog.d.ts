@@ -1,5 +1,6 @@
 import { AfterContentInit, EventEmitter, OnDestroy } from '@angular/core';
-import { Overlay, OverlayState } from '@angular2-material/core/overlay/overlay';
+import { Overlay } from '@angular2-material/core/overlay/overlay';
+import { OverlayState } from '@angular2-material/core/overlay/overlay-state';
 export declare class MdDialog implements AfterContentInit, OnDestroy {
     private overlay;
     constructor(overlay: Overlay);

@@ -1,7 +1,12 @@
-import { AfterContentInit, EventEmitter, OnInit } from '@angular/core';
-import { ControlValueAccessor } from '@angular/common';
-import { MdRadioDispatcher } from './radio_dispatcher';
-export { MdRadioDispatcher } from './radio_dispatcher';
+import { AfterContentInit, EventEmitter, OnInit, Provider } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import { MdUniqueSelectionDispatcher } from '@angular2-material/core/coordination/unique-selection-dispatcher';
+export { MdUniqueSelectionDispatcher } from '@angular2-material/core/coordination/unique-selection-dispatcher';
+/**
+ * Provider Expression that allows md-radio-group to register as a ControlValueAccessor. This
+ * allows it to support [(ngModel)] and ngControl.
+ */
+export declare const MD_RADIO_GROUP_CONTROL_VALUE_ACCESSOR: Provider;
 /** A simple change event emitted by either MdRadioButton or MdRadioGroup. */
 export declare class MdRadioChange {
     source: MdRadioButton;
@@ -32,6 +37,7 @@ export declare class MdRadioGroup implements AfterContentInit, ControlValueAcces
     /** Child radio buttons. */
     private _radios;
     name: string;
+    align: 'start' | 'end';
     disabled: boolean;
     value: any;
     selected: MdRadioButton;
@@ -63,7 +69,7 @@ export declare class MdRadioGroup implements AfterContentInit, ControlValueAcces
     registerOnTouched(fn: any): void;
 }
 export declare class MdRadioButton implements OnInit {
-    radioDispatcher: MdRadioDispatcher;
+    radioDispatcher: MdUniqueSelectionDispatcher;
     private _isFocused;
     /** Whether this radio is checked. */
     private _checked;
@@ -71,6 +77,10 @@ export declare class MdRadioButton implements OnInit {
     id: string;
     /** Analog to HTML 'name' attribute used to group radios for unique selection. */
     name: string;
+    /** Used to set the 'aria-label' attribute on the underlying input element. */
+    ariaLabel: string;
+    /** The 'aria-labelledby' attribute takes precedence as the element's text alternative. */
+    ariaLabelledby: string;
     /** Whether this radio is disabled. */
     private _disabled;
     /** Value assigned to this radio.*/
@@ -79,11 +89,13 @@ export declare class MdRadioButton implements OnInit {
     radioGroup: MdRadioGroup;
     /** Event emitted when the group value changes. */
     change: EventEmitter<MdRadioChange>;
-    constructor(radioGroup: MdRadioGroup, radioDispatcher: MdRadioDispatcher);
+    constructor(radioGroup: MdRadioGroup, radioDispatcher: MdUniqueSelectionDispatcher);
     inputId: string;
     checked: boolean;
     /** MdRadioGroup reads this to assign its own value. */
     value: any;
+    private _align;
+    align: 'start' | 'end';
     disabled: boolean;
     /** TODO: internal */
     ngOnInit(): void;

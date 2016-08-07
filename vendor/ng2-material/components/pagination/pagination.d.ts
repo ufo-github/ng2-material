@@ -1,4 +1,5 @@
-import { EventEmitter, ElementRef, AfterViewInit, AfterContentInit } from '@angular/core';
+import { EventEmitter, ElementRef, AfterViewInit, AfterContentInit, OnInit } from '@angular/core';
+import { DomSanitizationService, SafeHtml } from '@angular/platform-browser/src/security/dom_sanitization_service';
 import 'rxjs/add/operator/filter';
 import { PaginationService } from './pagination_service';
 export interface IPaginationModel {
@@ -6,23 +7,25 @@ export interface IPaginationModel {
     itemsPerPage: number;
     totalItems: number;
 }
-export declare abstract class AbstractPaginationSubComponent {
+export declare abstract class AbstractPaginationSubComponent implements OnInit {
     protected service: PaginationService;
     name: string;
     model: IPaginationModel;
     constructor(service: PaginationService);
+    ngOnInit(): void;
 }
 export declare class MdPaginationRange extends AbstractPaginationSubComponent {
     protected service: PaginationService;
+    private sanitizationService;
     mdPaginationRange: boolean;
-    html: string;
+    html: SafeHtml;
     name: string;
     model: IPaginationModel;
     rangeFormat: string;
     value: string;
-    constructor(service: PaginationService);
+    constructor(service: PaginationService, sanitizationService: DomSanitizationService);
     getFormattedValue(rangeStart: number, rangeStop: number, totalItems: number): string;
-    getRange(): string;
+    getRange(): SafeHtml;
 }
 export declare class MdPaginationControls extends AbstractPaginationSubComponent {
     protected service: PaginationService;

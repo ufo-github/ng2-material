@@ -1,0 +1,50 @@
+/**
+ * Mixin that creates a new stacking context.
+ * see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+ */
+:host {
+  display: block;
+  position: relative;
+  transform: translate3D(0, 0, 0); }
+  :host md-toolbar.demo-toolbar {
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.1); }
+    :host md-toolbar.demo-toolbar .md-icon-button {
+      margin-right: 0; }
+    :host md-toolbar.demo-toolbar .material-icons {
+      color: white; }
+  :host md-tab-group .md-tab-label {
+    color: #fafafa;
+    text-transform: uppercase; }
+    :host md-tab-group .md-tab-label.md-active {
+      font-weight: 400; }
+  :host md-tab-group .md-tab-header {
+    background-color: #009688;
+    border-bottom: 0; }
+    :host md-tab-group .md-tab-header md-ink-bar {
+      background-color: white; }
+  :host .demo-container {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    -webkit-transition: 0.02s padding cubic-bezier(0.35, 0, 0.25, 1);
+    transition: 0.02s padding cubic-bezier(0.35, 0, 0.25, 1);
+    position: relative;
+    padding-bottom: 0;
+    background-color: white; }
+  :host .demo-source-container {
+    overflow: hidden;
+    overflow-y: auto; }
+  :host .demo-content {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  :host .demo-content > div[layout-fill] {
+    min-height: 448px; }
+  :host .demo-source-container {
+    display: block;
+    height: 400px; }
