@@ -1,13 +1,63 @@
 {
-  "name": "@angular2-material/radio",
-  "version": "2.0.0-alpha.5-2",
-  "description": "Angular 2 Material radio",
-  "main": "./radio.js",
-  "typings": "./radio.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angular/material2.git"
+  "_args": [
+    [
+      {
+        "raw": "@angular2-material/radio@2.0.0-alpha.6",
+        "scope": "@angular2-material",
+        "escapedName": "@angular2-material%2fradio",
+        "name": "@angular2-material/radio",
+        "rawSpec": "2.0.0-alpha.6",
+        "spec": "2.0.0-alpha.6",
+        "type": "version"
+      },
+      "/Users/justindujardin/Source/ng2-material/modules/site"
+    ]
+  ],
+  "_from": "@angular2-material/radio@2.0.0-alpha.6",
+  "_id": "@angular2-material/radio@2.0.0-alpha.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/radio",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/radio-2.0.0-alpha.6.tgz_1467300961907_0.6817858491558582"
   },
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "_npmVersion": "3.8.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@angular2-material/radio@2.0.0-alpha.6",
+    "scope": "@angular2-material",
+    "escapedName": "@angular2-material%2fradio",
+    "name": "@angular2-material/radio",
+    "rawSpec": "2.0.0-alpha.6",
+    "spec": "2.0.0-alpha.6",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular2-material/radio/-/radio-2.0.0-alpha.6.tgz",
+  "_shasum": "2545e7f6051f271bb8c7157cf6bdc64a247c8b0f",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/radio@2.0.0-alpha.6",
+  "_where": "/Users/justindujardin/Source/ng2-material/modules/site",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material radio",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2545e7f6051f271bb8c7157cf6bdc64a247c8b0f",
+    "tarball": "https://registry.npmjs.org/@angular2-material/radio/-/radio-2.0.0-alpha.6.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
   "keywords": [
     "angular",
     "material",
@@ -16,38 +66,25 @@
     "radio"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/angular/material2/issues"
-  },
-  "homepage": "https://github.com/angular/material2#readme",
-  "peerDependencies": {
-    "@angular2-material/core": "2.0.0-alpha.5-2"
-  },
-  "_id": "@angular2-material/radio@2.0.0-alpha.5-2",
-  "scripts": {},
-  "_shasum": "8e7a14110a3fd75c86ed03fe88a54f7fe784c53d",
-  "_from": "@angular2-material/radio@2.0.0-alpha.5-2",
-  "_resolved": "https://registry.npmjs.org/@angular2-material/radio/-/radio-2.0.0-alpha.5-2.tgz",
-  "_npmVersion": "3.7.5",
-  "_nodeVersion": "5.7.0",
-  "_npmUser": {
-    "name": "angular2-material",
-    "email": "angular-core+npm@google.com"
-  },
-  "dist": {
-    "shasum": "8e7a14110a3fd75c86ed03fe88a54f7fe784c53d",
-    "tarball": "https://registry.npmjs.org/@angular2-material/radio/-/radio-2.0.0-alpha.5-2.tgz"
-  },
+  "main": "./radio.js",
   "maintainers": [
     {
       "name": "angular2-material",
       "email": "angular-core+npm@google.com"
     }
   ],
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/radio-2.0.0-alpha.5-2.tgz_1464814665809_0.29535300889983773"
+  "name": "@angular2-material/radio",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.6",
+    "@angular/forms": "^0.1.0"
   },
-  "directories": {},
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./radio.d.ts",
+  "version": "2.0.0-alpha.6"
 }

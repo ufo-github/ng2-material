@@ -11,7 +11,7 @@ var packages = {};
  **********************************************************************************************/
 var barrels = [
     // Angular specific barrels.
-    '@angular/core', '@angular/common', '@angular/compiler', '@angular/http', '@angular/router',
+    '@angular/core', '@angular/common', '@angular/forms', '@angular/compiler', '@angular/http', '@angular/router',
     '@angular/platform-browser', '@angular/platform-browser-dynamic',
     // Thirdparty barrels.
     'rxjs', 'ng2-material',

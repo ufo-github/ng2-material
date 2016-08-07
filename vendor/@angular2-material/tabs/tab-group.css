@@ -1,33 +1,27 @@
 :host {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  min-height: 248px; }
+  font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /** The top section of the view; contains the tab labels */
 .md-tab-header {
   overflow: hidden;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   border-bottom: 1px solid #e0e0e0;
-  -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0; }
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 /** Wraps each tab label */
 .md-tab-label {
@@ -53,11 +47,9 @@
   position: relative;
   overflow: hidden;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
@@ -67,12 +59,10 @@
   overflow: auto;
   box-sizing: border-box;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-flex-shrink: 1;
-      -ms-flex-negative: 1;
-          flex-shrink: 1; }
+  -ms-flex-negative: 1;
+      flex-shrink: 1; }
   .md-tab-body.md-active {
     display: block; }
 
@@ -82,5 +72,5 @@ md-ink-bar {
   bottom: 0;
   height: 2px;
   background-color: #009688;
-  -webkit-transition: 0.35s ease-out;
-  transition: 0.35s ease-out; }
+  -webkit-transition: 350ms ease-out;
+  transition: 350ms ease-out; }

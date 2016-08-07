@@ -5,6 +5,7 @@
   src: url("./MaterialIcons-Regular.eot");
   /* For IE6-8 */
   src: local("./Material Icons"), local("./MaterialIcons-Regular"), url("./MaterialIcons-Regular.woff2") format("woff2"), url("./MaterialIcons-Regular.woff") format("woff"), url("./MaterialIcons-Regular.ttf") format("truetype"); }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -52,5 +53,3 @@
 
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3); }
-
-/*# sourceMappingURL=font.css.map */

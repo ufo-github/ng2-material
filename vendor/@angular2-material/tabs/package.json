@@ -1,13 +1,63 @@
 {
-  "name": "@angular2-material/tabs",
-  "version": "2.0.0-alpha.5-2",
-  "description": "Angular 2 Material Tabs",
-  "main": "./tabs.js",
-  "typings": "./tabs.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angular/material2.git"
+  "_args": [
+    [
+      {
+        "raw": "@angular2-material/tabs@^2.0.0-alpha.6",
+        "scope": "@angular2-material",
+        "escapedName": "@angular2-material%2ftabs",
+        "name": "@angular2-material/tabs",
+        "rawSpec": "^2.0.0-alpha.6",
+        "spec": ">=2.0.0-alpha.6 <3.0.0",
+        "type": "range"
+      },
+      "/Users/justindujardin/Source/ng2-material/modules/site"
+    ]
+  ],
+  "_from": "@angular2-material/tabs@>=2.0.0-alpha.6 <3.0.0",
+  "_id": "@angular2-material/tabs@2.0.0-alpha.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/tabs",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/tabs-2.0.0-alpha.6.tgz_1467300970047_0.7524362981785089"
   },
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "_npmVersion": "3.8.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@angular2-material/tabs@^2.0.0-alpha.6",
+    "scope": "@angular2-material",
+    "escapedName": "@angular2-material%2ftabs",
+    "name": "@angular2-material/tabs",
+    "rawSpec": "^2.0.0-alpha.6",
+    "spec": ">=2.0.0-alpha.6 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.6.tgz",
+  "_shasum": "157269d2bdfe0d28084eee72e3770c22e5649af1",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/tabs@^2.0.0-alpha.6",
+  "_where": "/Users/justindujardin/Source/ng2-material/modules/site",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material Tabs",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "157269d2bdfe0d28084eee72e3770c22e5649af1",
+    "tarball": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.6.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
   "keywords": [
     "angular",
     "material",
@@ -16,38 +66,24 @@
     "tabs"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/angular/material2/issues"
-  },
-  "homepage": "https://github.com/angular/material2#readme",
-  "peerDependencies": {
-    "@angular2-material/core": "2.0.0-alpha.5-2"
-  },
-  "_id": "@angular2-material/tabs@2.0.0-alpha.5-2",
-  "scripts": {},
-  "_shasum": "f51a2691376690ed8a392da2343360e3ee740906",
-  "_from": "@angular2-material/tabs@>=2.0.0-alpha.5-2 <3.0.0",
-  "_resolved": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.5-2.tgz",
-  "_npmVersion": "3.7.5",
-  "_nodeVersion": "5.7.0",
-  "_npmUser": {
-    "name": "angular2-material",
-    "email": "angular-core+npm@google.com"
-  },
-  "dist": {
-    "shasum": "f51a2691376690ed8a392da2343360e3ee740906",
-    "tarball": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.5-2.tgz"
-  },
+  "main": "./tabs.js",
   "maintainers": [
     {
       "name": "angular2-material",
       "email": "angular-core+npm@google.com"
     }
   ],
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/tabs-2.0.0-alpha.5-2.tgz_1464814678107_0.27293278160504997"
+  "name": "@angular2-material/tabs",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.6"
   },
-  "directories": {},
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./tabs.d.ts",
+  "version": "2.0.0-alpha.6"
 }

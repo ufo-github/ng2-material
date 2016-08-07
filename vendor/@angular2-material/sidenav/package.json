@@ -1,13 +1,63 @@
 {
-  "name": "@angular2-material/sidenav",
-  "version": "2.0.0-alpha.5-2",
-  "description": "Angular 2 Material sidenav",
-  "main": "./sidenav.js",
-  "typings": "./sidenav.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/angular/material2.git"
+  "_args": [
+    [
+      {
+        "raw": "@angular2-material/sidenav@2.0.0-alpha.6",
+        "scope": "@angular2-material",
+        "escapedName": "@angular2-material%2fsidenav",
+        "name": "@angular2-material/sidenav",
+        "rawSpec": "2.0.0-alpha.6",
+        "spec": "2.0.0-alpha.6",
+        "type": "version"
+      },
+      "/Users/justindujardin/Source/ng2-material/modules/site"
+    ]
+  ],
+  "_from": "@angular2-material/sidenav@2.0.0-alpha.6",
+  "_id": "@angular2-material/sidenav@2.0.0-alpha.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/sidenav",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/sidenav-2.0.0-alpha.6.tgz_1467300966616_0.830357980215922"
   },
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "_npmVersion": "3.8.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@angular2-material/sidenav@2.0.0-alpha.6",
+    "scope": "@angular2-material",
+    "escapedName": "@angular2-material%2fsidenav",
+    "name": "@angular2-material/sidenav",
+    "rawSpec": "2.0.0-alpha.6",
+    "spec": "2.0.0-alpha.6",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular2-material/sidenav/-/sidenav-2.0.0-alpha.6.tgz",
+  "_shasum": "c3ea90fa5dff804a0616f7ee5b24e7f2ac66cf8b",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/sidenav@2.0.0-alpha.6",
+  "_where": "/Users/justindujardin/Source/ng2-material/modules/site",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material sidenav",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "c3ea90fa5dff804a0616f7ee5b24e7f2ac66cf8b",
+    "tarball": "https://registry.npmjs.org/@angular2-material/sidenav/-/sidenav-2.0.0-alpha.6.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
   "keywords": [
     "angular",
     "material",
@@ -19,38 +69,24 @@
     "drawer"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/angular/material2/issues"
-  },
-  "homepage": "https://github.com/angular/material2#readme",
-  "peerDependencies": {
-    "@angular2-material/core": "2.0.0-alpha.5-2"
-  },
-  "_id": "@angular2-material/sidenav@2.0.0-alpha.5-2",
-  "scripts": {},
-  "_shasum": "7fb58f0695ee7d53d0ccf67af19fd35a1f4ddbd3",
-  "_from": "@angular2-material/sidenav@2.0.0-alpha.5-2",
-  "_resolved": "https://registry.npmjs.org/@angular2-material/sidenav/-/sidenav-2.0.0-alpha.5-2.tgz",
-  "_npmVersion": "3.7.5",
-  "_nodeVersion": "5.7.0",
-  "_npmUser": {
-    "name": "angular2-material",
-    "email": "angular-core+npm@google.com"
-  },
-  "dist": {
-    "shasum": "7fb58f0695ee7d53d0ccf67af19fd35a1f4ddbd3",
-    "tarball": "https://registry.npmjs.org/@angular2-material/sidenav/-/sidenav-2.0.0-alpha.5-2.tgz"
-  },
+  "main": "./sidenav.js",
   "maintainers": [
     {
       "name": "angular2-material",
       "email": "angular-core+npm@google.com"
     }
   ],
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/sidenav-2.0.0-alpha.5-2.tgz_1464814670895_0.2615452567115426"
+  "name": "@angular2-material/sidenav",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.6"
   },
-  "directories": {},
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./sidenav.d.ts",
+  "version": "2.0.0-alpha.6"
 }

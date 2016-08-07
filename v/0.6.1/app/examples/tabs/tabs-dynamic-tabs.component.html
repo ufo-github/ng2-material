@@ -1,0 +1,20 @@
+<md-tab-group>
+  <md-tab *ngFor="let tab of tabs">
+    <template md-tab-label>{{tab.title}}</template>
+    <template md-tab-content>
+      <md-content class="md-padding">{{tab.content}}</md-content>
+    </template>
+  </md-tab>
+</md-tab-group>
+
+<form (submit)="addTab(label.value,content.value)" layout="column" class="md-padding">
+  <h2>Add a new Tab:</h2>
+  <div layout="row" layout-sm="column">
+    <md-input #label placeholder="Label"></md-input>
+    <md-input #content placeholder="Content"></md-input>
+    <button md-raised-button class="md-primary"
+            [disabled]="!label.value || !content.value" type="submit">
+      Add Tab
+    </button>
+  </div>
+</form>
